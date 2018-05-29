@@ -1,6 +1,6 @@
 # Define display_board that accepts a board and prints
 # out the current state.
-board = [" "," "," "," "," "," "," "," "," "]
+
 
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
@@ -37,4 +37,8 @@ def valid_move?(board, index)
   else
     return false
   end
+end
+
+def turn(board)
+  puts "Please enter 1-9:"
 end
