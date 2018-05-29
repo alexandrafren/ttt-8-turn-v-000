@@ -15,8 +15,8 @@ def input_to_index(input)
   input = input - 1
 end
 
-def move(board, input, character = "X")
-  board[input] = character
+def move(board, index, character = "X")
+  board[index] = character
 end
 
 def position_taken?(board, index)
@@ -44,7 +44,7 @@ def turn(board)
   input = gets.chomp
   index = input_to_index(input)
   if valid_move?(board,index)
-    move(board, input, "X")
+    move(board,index,"X")
     display_board(board)
   else
     puts "Error. Please choose again."
