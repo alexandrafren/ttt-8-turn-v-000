@@ -44,7 +44,7 @@ def turn(board)
   input = gets.chomp
   index = input_to_index(input)
   if valid_move?(board,index)
-    board[index] = input
+    move(board, input, "X")
     display_board(board)
   else
     puts "Error. Please choose again."
